@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Events </h2>
+<br>
+{% for event in event_list %}
+    <div class="event">
+        <h4> Event name:  {{ event.event_name }} </h4>
+        Event host: {{event.event_host}}<br>
+        Event responsible event: {{ event.event_responsible_host }}<br>
+        Event start time: {{ event.event_start_time }}<br>
+        Event end time: {{ event.event_end_time }}<br>
+        Event address : {{ event.event_address }}<br>
+        Event place : {{ event.event_place }}<br>
+        Event city : {{ event.event_city }}<br>
+        Event country : {{ event.event_country }}<br>
+        Event description : {{ event.event_description }}<br>
+        Event email : {{ event.event_email }}<br>
+        Event link : {{ event.event_link }}<br><hr>
+    </div>
+{% endfor %}
+{% endblock %}

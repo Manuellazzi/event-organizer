@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Menus </h2>
+<br>
+{% for menu in menu_list %}
+    <div class="menu">
+        <h4> Menu name:  {{ menu.menu_name }} </h4>
+        Menu food: {{ menu.menu_food }}<br>
+        Menu drink: {{ menu.menu_drink }}<br>
+        Menu price: {{ menu.menu_price }}<br>
+        Menu vege : {{ menu.menu_is_vege }}<br> <hr>
+    </div>
+{% endfor %}
+{% endblock %}

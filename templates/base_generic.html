@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <h1>Event organization</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/event">Events</a></li>
+            <li><a href="/host">Hosts</a></li>
+            <li><a href="/food">Food</a></li>
+            <li><a href="/drink">Drinks</a></li>
+            <li><a href="/menu">Menus</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

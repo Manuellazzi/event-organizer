@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Drinks </h2>
+<br>
+{% for drink in drink_list %}
+    <div class="drink">
+        <h4> Drink name:  {{ drink.drink_name }} </h4>
+        Alcoholic: {{drink.drink_is_alcoholic}}<br>
+        Drink price: ${{ drink.drink_price }}<br> 
+        Drink Amount: {{ drink.drink_amount }}  L <br><hr>
+    </div>
+{% endfor %}
+{% endblock %}

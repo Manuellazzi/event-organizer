@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Hosts </h2>
+<br>
+{% for host in host_list %}
+    <div class="host">
+        <h4> Host last name:  {{ host.host_last_name }} </h4>
+        Host first name:  {{ host.host_first_name }}<br>
+        Host address: {{ host.host_address }}<br>
+        Host ID : {{ host.host_id }}<br>
+        Host phone number: {{ host.host_phone_number }}<br>
+        Host email: {{ host.host_email }}<br><hr>
+    </div>
+{% endfor %}
+{% endblock %}
